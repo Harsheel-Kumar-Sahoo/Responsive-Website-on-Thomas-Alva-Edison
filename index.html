@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Web Dev</title>
+</head>
+<body>
+    <h2>Thomas Alva Edison</h2>
+    <center>
+        <img class="start_img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Thomas_Edison2.jpg/330px-Thomas_Edison2.jpg" >
+        <p>Thomas Alva Edison (February 11, 1847 – October 18, 1931) was an American inventor and businessman who has been described as America's greatest inventor. He developed many devices in fields such as electric power generation, mass communication, sound recording, and motion pictures. These inventions, which include the phonograph, the motion picture camera, and early versions of the electric light bulb, have had a widespread impact on the modern industrialized world. He was one of the first inventors to apply the principles of organized science and teamwork to the process of invention, working with many researchers and employees. He established the first industrial research laboratory.
+
+            Edison was raised in the American Midwest; early in his career, he worked as a telegraph operator, which inspired some of his earliest inventions. In 1876, he established his first laboratory facility in Menlo Park, New Jersey, where many of his early inventions were developed. He later established a botanical laboratory in Fort Myers, Florida, in collaboration with businessmen Henry Ford and Harvey S. Firestone, and a laboratory in West Orange, New Jersey, that featured the world's first film studio, the Black Maria. He was a prolific inventor, holding 1,093 US patents in his name, as well as patents in other countries. He died in 1931 of complications of diabetes.</p>
+            <img id="myImage" onclick="changeImage()" src="https://www.w3schools.com/js/pic_bulboff.gif" width="100" height="180">
+            <p>Click this bulb</p>
+    </center>
+</body>
+            <script>
+                function changeImage() {
+                  var image = document.getElementById('myImage');
+                  if (image.src.match("bulbon")) {
+                    image.src = "https://www.w3schools.com/js/pic_bulboff.gif";
+                  } else {
+                    image.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+                  }
+                }
+                </script>
+<style>
+body{
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+h2{
+    font-size: 6rem;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+.start_img{
+    max-width:80%;
+    height:auto;
+    margin: auto;
+    border-radius: 10vh;
+    border: 2vh solid white;
+}
+p{
+    font-size: 3rem;
+}
+</style>
+</html>
